@@ -109,7 +109,7 @@ body{
 .hero-section-top {
   display: flex;
   width: 100%;
-  height: 90%; /* Górna część zajmuje 80% wysokości */
+  height: 90%;
 }
 
 .hero-section-left,
