@@ -9,8 +9,8 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-          <a href="#" class="logo">Logo</a>
-          <ul class="nav-links">
+        <a href="#" class="logo">Logo</a>
+        <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Pricing</a></li>
@@ -18,13 +18,27 @@
             <li><a href="#">About</a></li>
             <li><img id="icon-Greatbritain" src="icons/Great Britain.png" alt=""></li>
             <li><img id="icon-Poland" src="icons/Poland.png" alt=""></li>
-          </ul>
+        </ul>
+        <div class="burger" id="burger">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </nav>
+        <div class="mobile-menu" id="mobile-menu">
+            <a href="#" class="active">Home</a>
+            <a href="#">Portfolio</a>
+            <a href="#">Pricing</a>
+            <a href="#">Contact</a>
+            <a href="#">About</a>
+        </div>
+    </div>
+    </nav>
     <div class="main">
         <section class="hero-section">
             <div class="hero-section-top">
-                <div class="hero-section-left"></div>
+                <div class="hero-section-left">
+                    <img src="Images/3232492_43921-removebg-preview 2.png" alt="" style="position: absolute;">
+                </div>
                 <div class="hero-section-right">
                     <div class="hero-section-right-top"><p>Optimization, performance, design 
                         <span><br>that's our recipe.</span></p></div>
@@ -81,5 +95,13 @@
             </svg>
         </section>
     </div>
+    <script>
+        const burger = document.getElementById('burger');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        burger.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+        });
+    </script>
 </body>
 </html>
