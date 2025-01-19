@@ -5,12 +5,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="info-section.css">
+    <link rel="stylesheet" href="work-section.css">
+    <link rel="stylesheet" href="pricing-section.css">
 </head>
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-        <a href="#" class="logo">Logo</a>
-        <ul class="nav-links">
+          <a href="#" class="logo">Logo</a>
+          <ul class="nav-links">
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">Portfolio</a></li>
             <li><a href="#">Pricing</a></li>
@@ -18,27 +21,13 @@
             <li><a href="#">About</a></li>
             <li><img id="icon-Greatbritain" src="icons/Great Britain.png" alt=""></li>
             <li><img id="icon-Poland" src="icons/Poland.png" alt=""></li>
-        </ul>
-        <div class="burger" id="burger">
-            <div></div>
-            <div></div>
-            <div></div>
+          </ul>
         </div>
-        <div class="mobile-menu" id="mobile-menu">
-            <a href="#" class="active">Home</a>
-            <a href="#">Portfolio</a>
-            <a href="#">Pricing</a>
-            <a href="#">Contact</a>
-            <a href="#">About</a>
-        </div>
-    </div>
-    </nav>
+      </nav>
     <div class="main">
         <section class="hero-section">
             <div class="hero-section-top">
-                <div class="hero-section-left">
-                    <img src="Images/3232492_43921-removebg-preview 2.png" alt="" style="position: absolute;">
-                </div>
+                <div class="hero-section-left"></div>
                 <div class="hero-section-right">
                     <div class="hero-section-right-top"><p>Optimization, performance, design 
                         <span><br>that's our recipe.</span></p></div>
@@ -94,14 +83,172 @@
                 <circle cx="69" cy="69" r="69" fill="#306D6F"/>
             </svg>
         </section>
-    </div>
-    <script>
-        const burger = document.getElementById('burger');
-        const mobileMenu = document.getElementById('mobile-menu');
+        <section class="info-section">
+            <svg class="svg-info-bg" xmlns="http://www.w3.org/2000/svg" width="2000" height="800" viewBox="30 0 2000 800" fill="none">
+                <g filter="url(#filter0_d_39_114)">
+                  <path d="M20 171L1940 15.5V741L20 639.5V171Z" fill="url(#paint0_linear_39_114)"/>
+                </g>
+                XD
+                <defs>
+                  <filter id="filter0_d_39_114" x="0.6" y="0.1" width="1958.8" height="764.3" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                    <feFlood flood-opacity="0" result="BackgroundImageFix"/>
+                    <feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+                    <feOffset dy="4"/>
+                    <feGaussianBlur stdDeviation="9.7"/>
+                    <feComposite in2="hardAlpha" operator="out"/>
+                    <feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
+                    <feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_39_114"/>
+                    <feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_39_114" result="shape"/>
+                  </filter>
+                  <linearGradient id="paint0_linear_39_114" x1="980" y1="15.5" x2="980" y2="741" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1E4445"/>
+                    <stop offset="1" stop-color="#1B4445"/>
+                  </linearGradient>
+                </defs>
+              </svg>
 
-        burger.addEventListener('click', () => {
-            mobileMenu.classList.toggle('active');
-        });
-    </script>
+              <div class="info-section-aboutus">
+               <div class="about-us-about-text">
+                    <span class="about-text">About</span>
+                        <div class="line"></div>
+               </div>
+                <p class="about-us-p">We are a dynamic team of technology and design enthusiasts who combine creativity with the latest trends in the web industry. We specialize in creating modern, functional, and visually appealing websites that help businesses succeed in the digital world.
+
+                    Our mission is to deliver solutions that not only look great but also perform flawlessly. We understand that every brand is unique, which is why we design each website with attention to detail, tailoring it to our clients' needs and expectations.</p>
+              </div>
+
+        </section>
+        <section class="work-section">
+          <span class="text">What do we do?</span>
+          <div class="work-elements">
+            <div class="element">
+              <img src="/icons/Designer.png" alt="" srcset="">
+              <span>Website design</span>
+              <p>Modern, responsive, and tailored websites.</p>
+            </div>
+            <div class="element">
+              <img src="/icons/Designer.png" alt="" srcset="">
+              <span>Website design</span>
+              <p>Modern, responsive, and tailored websites.</p>
+            </div>
+            <div class="element">
+              <img src="/icons/Designer.png" alt="" srcset="">
+              <span>Website design</span>
+              <p>Modern, responsive, and tailored websites.</p>
+            </div>
+            <div class="element">
+              <img src="/icons/Designer.png" alt="" srcset="">
+              <span>Website design</span>
+              <p>Modern, responsive, and tailored websites.</p>
+            </div>
+          </div>
+        </section>
+        <section class="skills-section" style="font-size: 20vh">Skills - ZMIANA</section>
+        <section class="pricing-section">
+          <div class="pricing-title">
+            <div class="line"></div>
+            <span>Pricing</span>
+          </div>
+          <div class="pricing-elemetns">
+            <div class="element_1">
+              <div class="element-title-bar">
+                  <span>Basic</span>
+              </div>
+              <div class="element-content-bar">
+                <div class="pricing">
+                  <span>1000 zł</span><p>≈ 1 week</p>
+                </div>
+                <div class="pricing-content">
+                  <ul>
+                    <li>One-page website (scrolling layout).</li>
+                    <li>Responsive design (desktop and mobile-friendly).</li>
+                    <li>Basic contact form.</li>
+                    <li>Integration with social media links.</li>
+                    <li>Hosting and domain setup assistance.</li>
+                    <li>Technical support</li>
+                    <li>Guarantee for 6 months</li>
+                    <li>Market research</li>
+                    <li>Satisfaction guarantee</li>
+                  </ul>
+                </div>
+                <button>Order now</button>
+              </div>
+            </div>
+            <div class="element_1">
+              <div class="element-title-bar">
+                  <span>Basic</span>
+              </div>
+              <div class="element-content-bar">
+                <div class="pricing">
+                  <span>1000 zł</span><p>≈ 1 week</p>
+                </div>
+                <div class="pricing-content">
+                  <ul>
+                    <li>One-page website (scrolling layout).</li>
+                    <li>Responsive design (desktop and mobile-friendly).</li>
+                    <li>Basic contact form.</li>
+                    <li>Integration with social media links.</li>
+                    <li>Hosting and domain setup assistance.</li>
+                    <li>Technical support</li>
+                    <li>Guarantee for 6 months</li>
+                    <li>Market research</li>
+                    <li>Satisfaction guarantee</li>
+                  </ul>
+                </div>
+                <button>Order now</button>
+              </div>
+            </div>
+            <div class="element_1">
+              <div class="element-title-bar">
+                  <span>Basic</span>
+              </div>
+              <div class="element-content-bar">
+                <div class="pricing">
+                  <span>1000 zł</span><p>≈ 1 week</p>
+                </div>
+                <div class="pricing-content">
+                  <ul>
+                    <li>One-page website (scrolling layout).</li>
+                    <li>Responsive design (desktop and mobile-friendly).</li>
+                    <li>Basic contact form.</li>
+                    <li>Integration with social media links.</li>
+                    <li>Hosting and domain setup assistance.</li>
+                    <li>Technical support</li>
+                    <li>Guarantee for 6 months</li>
+                    <li>Market research</li>
+                    <li>Satisfaction guarantee</li>
+                  </ul>
+                </div>
+                <button>Order now</button>
+              </div>
+            </div>
+            <div class="element_1">
+              <div class="element-title-bar">
+                  <span>Basic</span>
+              </div>
+              <div class="element-content-bar">
+                <div class="pricing">
+                  <span>1000 zł</span><p>≈ 1 week</p>
+                </div>
+                <div class="pricing-content">
+                  <ul>
+                    <li>One-page website (scrolling layout).</li>
+                    <li>Responsive design (desktop and mobile-friendly).</li>
+                    <li>Basic contact form.</li>
+                    <li>Integration with social media links.</li>
+                    <li>Hosting and domain setup assistance.</li>
+                    <li>Technical support</li>
+                    <li>Guarantee for 6 months</li>
+                    <li>Market research</li>
+                    <li>Satisfaction guarantee</li>
+                  </ul>
+                </div>
+                <button>Order now</button>
+              </div>
+            </div>
+          </div>
+        </section>
+    </div>
 </body>
 </html>
+
